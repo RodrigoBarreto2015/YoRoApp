@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/lucid-carson-27bdaa.netlify.app/static/css/main.0544b2b0.chunk.css",
-    "main.js": "/lucid-carson-27bdaa.netlify.app/static/js/main.eec0685a.chunk.js",
-    "main.js.map": "/lucid-carson-27bdaa.netlify.app/static/js/main.eec0685a.chunk.js.map",
-    "runtime-main.js": "/lucid-carson-27bdaa.netlify.app/static/js/runtime-main.9a8016c3.js",
-    "runtime-main.js.map": "/lucid-carson-27bdaa.netlify.app/static/js/runtime-main.9a8016c3.js.map",
-    "static/css/2.1f23f2a1.chunk.css": "/lucid-carson-27bdaa.netlify.app/static/css/2.1f23f2a1.chunk.css",
-    "static/js/2.a3c2263e.chunk.js": "/lucid-carson-27bdaa.netlify.app/static/js/2.a3c2263e.chunk.js",
-    "static/js/2.a3c2263e.chunk.js.map": "/lucid-carson-27bdaa.netlify.app/static/js/2.a3c2263e.chunk.js.map",
-    "index.html": "/lucid-carson-27bdaa.netlify.app/index.html",
-    "static/css/2.1f23f2a1.chunk.css.map": "/lucid-carson-27bdaa.netlify.app/static/css/2.1f23f2a1.chunk.css.map",
-    "static/css/main.0544b2b0.chunk.css.map": "/lucid-carson-27bdaa.netlify.app/static/css/main.0544b2b0.chunk.css.map",
-    "static/js/2.a3c2263e.chunk.js.LICENSE.txt": "/lucid-carson-27bdaa.netlify.app/static/js/2.a3c2263e.chunk.js.LICENSE.txt",
-    "static/media/Header.css": "/lucid-carson-27bdaa.netlify.app/static/media/bg.9c3efa60.jpg",
-    "static/media/semantic.min.css": "/lucid-carson-27bdaa.netlify.app/static/media/outline-icons.ddae9b1b.woff"
+    "main.css": "/YoRoApp/static/css/main.e759a959.chunk.css",
+    "main.js": "/YoRoApp/static/js/main.eec0685a.chunk.js",
+    "main.js.map": "/YoRoApp/static/js/main.eec0685a.chunk.js.map",
+    "runtime-main.js": "/YoRoApp/static/js/runtime-main.7ea94da3.js",
+    "runtime-main.js.map": "/YoRoApp/static/js/runtime-main.7ea94da3.js.map",
+    "static/css/2.a44e865a.chunk.css": "/YoRoApp/static/css/2.a44e865a.chunk.css",
+    "static/js/2.a3c2263e.chunk.js": "/YoRoApp/static/js/2.a3c2263e.chunk.js",
+    "static/js/2.a3c2263e.chunk.js.map": "/YoRoApp/static/js/2.a3c2263e.chunk.js.map",
+    "index.html": "/YoRoApp/index.html",
+    "static/css/2.a44e865a.chunk.css.map": "/YoRoApp/static/css/2.a44e865a.chunk.css.map",
+    "static/css/main.e759a959.chunk.css.map": "/YoRoApp/static/css/main.e759a959.chunk.css.map",
+    "static/js/2.a3c2263e.chunk.js.LICENSE.txt": "/YoRoApp/static/js/2.a3c2263e.chunk.js.LICENSE.txt",
+    "static/media/Header.css": "/YoRoApp/static/media/bg.9c3efa60.jpg",
+    "static/media/semantic.min.css": "/YoRoApp/static/media/outline-icons.ddae9b1b.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.9a8016c3.js",
-    "static/css/2.1f23f2a1.chunk.css",
+    "static/js/runtime-main.7ea94da3.js",
+    "static/css/2.a44e865a.chunk.css",
     "static/js/2.a3c2263e.chunk.js",
-    "static/css/main.0544b2b0.chunk.css",
+    "static/css/main.e759a959.chunk.css",
     "static/js/main.eec0685a.chunk.js"
   ]
 }
