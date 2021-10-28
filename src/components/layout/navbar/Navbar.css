@@ -1,0 +1,174 @@
+
+body, ul, li, a, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.Menu-toogle{
+    display: none;
+}
+
+.SideBar-Menu{
+    display: none;
+}
+
+.Navbar-Container{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    align-items: center;
+    height: 11vh;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Navbar-Container .Counter-Section{
+    justify-self: flex-end;
+    margin-right: 5%;
+}
+
+.Menu-Section nav ul{
+    display: flex;
+}
+
+.Menu-Section nav ul li{
+    display: block;
+    margin-left: 15px;
+    cursor: pointer;
+    padding: 10px;    
+}
+
+.Menu-Section nav ul li a{
+    color: white;
+}
+
+.Navbar-Container.dark{
+    background-color: white;
+    border-bottom: #EEEEE0 0.3px solid;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+
+    animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    -ms-animation: fadeIn 1s;
+}
+
+.Navbar-Container.dark nav ul li a{
+    color: black;
+}
+
+@media (max-width: 700px) {
+
+    .Navbar-Container{
+        grid-template-columns: 30px 1fr;
+    }
+
+    .Menu-Section nav{
+        display: none;
+    }
+
+    .Menu-toogle{
+        display: initial;
+        width: 10px;
+    }
+
+    .Menu-toogle .one,
+    .Menu-toogle .two,
+    .Menu-toogle .three{
+        background-color: white;
+        height: 3px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;        
+        margin-left: 50%;
+    }
+
+    .Navbar-Container.dark .Menu-Section .one,
+    .Navbar-Container.dark .Menu-Section .two,
+    .Navbar-Container.dark .Menu-Section .three{
+        background-color: black;
+    }
+
+    /*menu*/
+
+    .Menu-Section.on .one, .Navbar-Container.dark .Menu-Section.on .one{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .Menu-Section.on .two, .Navbar-Container.dark .Menu-Section.on .two{
+        opacity: 0;
+    }
+
+    .Menu-Section.on .three, .Navbar-Container.dark .Menu-Section.on .three{
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    .Menu-Section.on .SideBar-Menu{
+        display: block;
+        position: absolute;
+        top:11vh;
+        left: 0;
+        width: 90vw;
+        height: 30vh;
+        background-color: #FFFAFA;
+        z-index: 10;
+        border-bottom: #EEEEE0 0.3px solid;
+    }
+
+    .Menu-Section.on .SideBar-Menu ul{
+        display: grid;
+        grid-template-rows: 40% 40% 40%;        
+        align-items: center;
+    }
+
+    .Menu-Section.on .SideBar-Menu ul li{
+        padding: 16px;
+    }
+
+    .Menu-Section.on .SideBar-Menu ul li a{
+        color: black;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 290px) {
+
+    .Menu-Section.on .SideBar-Menu{
+        height: 30vh;
+    }
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+
+

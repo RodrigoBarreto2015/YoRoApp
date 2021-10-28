@@ -1,0 +1,51 @@
+.List{
+    padding: 20px;
+    margin-top: 14vh;
+}
+
+.List h1{
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    color: #E9967A;
+}
+
+.List h3{
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+.ItemList{
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+@media (min-width: 350px) {
+    .ItemList{
+        margin-left: 4.8%;
+    }
+}
+
+@media (min-width: 450px) {
+    .ItemList{
+        margin-left: 10%;
+    }
+}
+
+@media (min-width: 550px) {
+    .ItemList{
+        margin-left: 15%;
+    }
+}
+
+@media (min-width: 630px) AND (max-width: 770px){
+    .ItemList{
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 700px) {
+    .List{
+        margin-top: 10vh;
+    }
+}
+

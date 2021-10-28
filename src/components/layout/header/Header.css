@@ -1,0 +1,42 @@
+body, ul, li, a, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.Header{
+    background: url('../../../images/bg.jpg') no-repeat 50% 50%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90vh 2vh;
+}
+
+.Header h1{
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    color: white;
+    font-family: 'Courgette', cursive;
+    font-size: 7.6rem;
+}
+
+.Header a{
+    color: gray;
+    align-self: flex-end;
+    justify-self: center;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 420px) {
+    .Header h1{
+        font-size: 5rem;
+    }
+
+    .Header a{
+        margin-bottom: 12%;
+    }
+}
