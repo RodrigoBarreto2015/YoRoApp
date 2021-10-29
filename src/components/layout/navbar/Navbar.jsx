@@ -80,7 +80,7 @@ function Navbar() {
         <nav className="SideBar-Menu">
           <ul>
             <li><Icon color='black' name='home' />
-              <Link onClick={hideMenu} to="/YoRoApp">Página Inicial</Link ></li>
+              <Link onClick={hideMenu} to="/">Página Inicial</Link ></li>
             <li><Icon color='black' name='gift' />
               <Link onClick={hideMenu} to="/gift_list">Lista de presentes</Link ></li>
             <li><Icon color='black' name='sign-in' />
@@ -89,7 +89,7 @@ function Navbar() {
         </nav>
         <nav>
           <ul>
-            <li><Link to="/YoRoApp">Página Inicial</Link></li>
+            <li><Link to="/">Página Inicial</Link></li>
             <li><Link to="/gift_list">Lista de presentes</Link></li>
             <li><a onClick={handleClick}>{value}</a></li>
           </ul>
