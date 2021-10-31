@@ -14,7 +14,7 @@ function Item(props) {
 
     const links = props.links;
 
-    const { inviteCode, itens, chooseItemList } = useContext(GlobalContext);
+    const { inviteCode, itens, chooseItemList, unChooseItemList } = useContext(GlobalContext);
 
     let userItensId = [];
     let idsDisabled = props.idsDisabled;
@@ -43,10 +43,14 @@ function Item(props) {
     const chooseItem = (code, id) => {
         ItemService.chooseItem(code, id, "")
             .then(response => {
-                value = "Escolhi esse";
-                color = "red";
-                buttonIcon = "times";
-                chooseItemList(response.data);
+                if (code === 0) {
+                    value = "Escolher esse";
+                    color = "green";
+                    buttonIcon = "right arrow";
+                    unChooseItemList(response.data);
+                } else {
+                    chooseItemList(response.data);
+                }
             })
             .catch(e => {
                 console.log(e);
@@ -58,6 +62,9 @@ function Item(props) {
             .then(response => {
                 if (response.data != null && response.data) {
                     chooseItem(localStorage.getItem("inviteCode"), props.id);
+                    value = "Escolhi esse";
+                    color = "red";
+                    buttonIcon = "times";
                 } else {
                     setModalMsg("Item acabou de ser escolhido, por favor selecione outro!");
                     setOpen(true);
@@ -69,7 +76,11 @@ function Item(props) {
     };
 
     const handleClick = () => {
-        itemAlreadyChoose(props.id);
+        if (value !== "Escolhi esse") {
+            itemAlreadyChoose(props.id);
+        } else {
+            chooseItem(0, props.id);
+        }
     }
 
     return (

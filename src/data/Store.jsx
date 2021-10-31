@@ -24,6 +24,11 @@ export const GlobalProvider = props => {
         dispatch({ type: "CHOOSE_ITEM", payload: item });
     }
 
+    const unChooseItemList = item => {
+        var filtered = state.itens.filter(x => x.productId !== item.productId);
+        dispatch({ type: "UNCHOOSE_ITEM", payload: filtered });
+    }
+
     const updateItens = itens => {
         dispatch({ type: "UPDATE_ITENS", payload: itens });
     }
@@ -103,7 +108,8 @@ export const GlobalProvider = props => {
             confirmed: state.confirmed,
             playMusic: state.playMusic,
             confirmPresence,
-            chooseItemList
+            chooseItemList,
+            unChooseItemList
         }}>
             {props.children}
         </GlobalContext.Provider>

@@ -1,5 +1,4 @@
 .List{
-    padding: 20px;
     margin-top: 14vh;
 }
 
@@ -19,9 +18,27 @@
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
+.ShowMoreButton{
+    margin-left: 50%;
+    margin-top: 8%;
+}
+
+@media (min-width: 300px) {
+
+    .ShowMoreButton{
+        margin-left: 30%;
+        margin-top: 10%;
+    }
+}
+
 @media (min-width: 350px) {
     .ItemList{
         margin-left: 4.8%;
+    }
+
+    .ShowMoreButton{
+        margin-left: 35%;
+        margin-top: 10%;
     }
 }
 

@@ -8,6 +8,8 @@ import {
   Route
 } from "react-router-dom";
 
+import { BiCaretUp } from "react-icons/bi";
+
 import { GlobalProvider } from '../data/Store';
 
 import Home from "./pages/home/Home";
@@ -46,7 +48,9 @@ function App() {
             </Switch>
           </div>
           <MusicPlayer className="MusicContainer" />
-          <footer />
+          <footer >
+            <a href="#content"><BiCaretUp size={50} className="ButtonUp" /></a>
+          </footer>
         </div>
       </Router>
     </GlobalProvider>
