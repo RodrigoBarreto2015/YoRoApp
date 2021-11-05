@@ -116,6 +116,7 @@ body, ul, li, a, p, .Counter-Section{
         top:11vh;
         left: 0;
         width: 90vw;
+        margin: 0 auto;
         height: 30vh;
         background-color: #FFFAFA;
         z-index: 10;
@@ -142,6 +143,7 @@ body, ul, li, a, p, .Counter-Section{
 
     .Menu-Section.on .SideBar-Menu{
         height: 30vh;
+        margin: 0 auto;
     }
 }
 

@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import "./MusicPlayer.css";
 import 'semantic-ui-css/semantic.min.css';
 import { Button } from 'semantic-ui-react';

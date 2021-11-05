@@ -27,7 +27,7 @@
 @media (min-width: 300px) {
 
     .ShowMoreButton{
-        margin-left: 30%;
+        margin-left: 25%;
         margin-top: 10%;
     }
 }
@@ -38,14 +38,14 @@
     }
 
     .ShowMoreButton{
-        margin-left: 35%;
+        margin-left: 31%;
         margin-top: 10%;
     }
 }
 
-@media (min-width: 450px) {
+@media (min-width: 410px) {
     .ItemList{
-        margin-left: 10%;
+        margin-left: 8%;
     }
 }
 
