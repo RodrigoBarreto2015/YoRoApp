@@ -40,4 +40,9 @@ img{
 .Images > div{
     margin: 10px;
     flex: 1 1 200px;
+    border: rgb(179, 174, 174);
 }
+
+.Images > div p{
+    margin-top: 5%;
+} 
